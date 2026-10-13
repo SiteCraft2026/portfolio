@@ -10,6 +10,14 @@ const projects = [
     image: "/projects/playtime.webp",
   },
   {
+    title: "WasteAway",
+    description: "ნაგვის გატანის სერვისი თბილისის კორპუსებისთვის",
+    category: "სერვისის ვებსაიტი",
+    url: "https://wasteaway.ge",
+    features: ["განაცხადის ფორმა", "რუკაზე მონიშვნა", "ქართული და ინგლისური"],
+    image: "/projects/wasteaway.webp",
+  },
+  {
     title: "DevNews",
     description: "ტექნოლოგიური სიახლეების პლატფორმა",
     category: "ბლოგ პლატფორმა",
@@ -45,7 +53,7 @@ export function Portfolio() {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 gap-6">
           {projects.map((project) => (
             <a
               key={project.title}
