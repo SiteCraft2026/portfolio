@@ -87,7 +87,8 @@ Not needed now:
   - The Georgian card text was written by Fable 5.1 and checked against its English back-translation. Two words match WasteAway's own site: "განაცხადის ფორმა" and "რუკაზე მონიშვნა".
   - The grid now has 2 columns on wider screens (it had 3), so the 4 cards make a 2 x 2 block.
   - `npm run build` passes. Checked in the dev server at 1440, 768 and 390 px wide.
-  - Found: GitHub `main` is at `ea5d65a`, but Vercel's last deploy is still `9631eeb`. So the 2026-10-08 commits reached GitHub but started no deploy. This backs up problem 4.
+  - Committed and pushed as `2fc50ba` (Saba's OK). **It is on GitHub but NOT live.** A minute after the push, Vercel had no new deploy, and the live site still showed the old card list (`/projects/wasteaway.webp` gave 404).
+  - Vercel's last deploy is still `9631eeb` (2026-03-31). The 2026-10-08 pushes (`96b3afd`, `ea5d65a`) started no deploy either. So the Vercel Git link is broken (problem 4). To go live: reconnect the repo in Vercel, then deploy `main`.
 - **2026-10-08:** light setup (agent docs) added: `AGENTS.md`, `CLAUDE.md`, `STATUS.md`. Checked the same day: the live site answers 200; `og:url` is `sitecraft.ge` (not registered); robots.txt and sitemap.xml give 404; Vercel's source is still the old repo name; a plain-text npm token sits in `.claude/settings.local.json` (not committed).
 - **2026-03-31:** last code work: About section redesign, real contact details, real project screenshots, a Lighthouse scores section. Live deploy `9631eeb`.
 - **2026-03-22:** first commit: the landing page, built from `BRIEF.md` with v0.dev.
